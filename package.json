@@ -4,7 +4,8 @@
   "description": "tba",
   "main": "main.js",
   "scripts": {
-    "start": "electron main.js"
+    "start": "webpack-dev-server --host 0.0.0.0",
+    "electron": "electron main.js"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,18 @@
   },
   "homepage": "https://github.com/nobodyinc/jane",
   "devDependencies": {
-    "electron-prebuilt": "^0.34.0"
+    "electron-prebuilt": "^0.34.0",
+    "babel": "^5.8.5",
+    "babel-core": "^5.8.5",
+    "babel-loader": "^5.3.2",
+    "css-loader": "^0.15.6",
+    "file-loader": "^0.8.4",
+    "react-hot-loader": "^1.2.8",
+    "webpack": "^1.10.5",
+    "webpack-dev-server": "^1.10.1"
+  },
+  "dependencies": {
+    "react": "^0.14.2",
+    "react-dom": "^0.14.2"
   }
 }
